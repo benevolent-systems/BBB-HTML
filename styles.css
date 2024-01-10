@@ -71,7 +71,7 @@ p + p {
 
 /* Additional styles for the landing area */
 .landing-header {
-    background-color: #333;
+    /* background-color: #333; */
     color: #fff;
     padding: 20px;
 }
@@ -83,7 +83,7 @@ p + p {
     width: 70vw;
     margin: 0 auto;
     background-color: #000000;
-    font-family: ;
+    max-width: 1280px;
 }
 
 .logo img {
@@ -104,17 +104,24 @@ p + p {
     justify-content: space-between;
     align-items: center;
     width: 70vw;
-    /* max-width: 1200px; */
+    max-width: 1280px;
     margin: 0 auto;
+    padding-top: 2%;
 }
 
 .left-content {
     flex: 1;
-    padding-right: 20px;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
 }
 
 .right-content img {
-    max-width: 100%;
+    max-width: 778px;
     height: auto;
     width: 40vw;
+}
+
+.splash-title {
+    font-size: 4rem;
 }
