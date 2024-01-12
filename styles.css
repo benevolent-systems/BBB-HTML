@@ -4,6 +4,12 @@ body, h1, h2, h3, p {
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Adler';
+    src: url('fonts/Adler.woff2') format('woff2'),
+    /* Add additional font file formats if necessary */
+  }
+
 /* Set a background color for the body */
 body {
     background-color: #000000;
@@ -61,8 +67,9 @@ p + p {
     color: #fff;
     text-align: center;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+    font-size: large;
 }
 
 .button:hover {
@@ -77,13 +84,14 @@ p + p {
 }
 
 .horizontal-nav {
+    font-family: 'Adler';
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 70vw;
     margin: 0 auto;
     background-color: #000000;
-    max-width: 1280px;
+    max-width: 1060px;
 }
 
 .logo img {
@@ -99,6 +107,14 @@ p + p {
     margin-right: 20px;
 }
 
+.horizontal-nav a {
+    color: #fff;
+}
+
+.horizontal-nav a:hover {
+    color: #E5771E;
+}
+
 .landing-content {
     display: flex;
     justify-content: space-between;
@@ -110,18 +126,21 @@ p + p {
 }
 
 .left-content {
-    flex: 1;
     flex-direction: column;
     padding: 20px;
     align-items: flex-start;
 }
 
 .right-content img {
-    max-width: 778px;
+    max-width: 100%;
     height: auto;
-    width: 40vw;
+    width: 30vw;
 }
 
 .splash-title {
+    font-family: 'Adler';
     font-size: 4rem;
+    color: #fff;
+    transform: rotate(-4deg);
+    margin-bottom: 20px;
 }
