@@ -70,6 +70,7 @@ p + p {
     border-radius: 10px;
     cursor: pointer;
     font-size: large;
+    margin-bottom: 30px;
 }
 
 .button:hover {
@@ -129,6 +130,20 @@ p + p {
     flex-direction: column;
     padding: 20px;
     align-items: flex-start;
+}
+
+.splash-contacts {
+    width: 20vw;
+    margin: auto;
+}
+
+.splash-contacts p {
+    color: #fff;
+}
+
+.left-content p:last-of-type {
+    padding-top: 5px;
+    border-top: #E5771E dotted 5px;
 }
 
 .right-content img {
