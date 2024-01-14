@@ -27,11 +27,14 @@ header {
 
 /* Style the main content */
 .main-content {
-    max-width: 800px;
+    max-width: 1920px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content img {
+    max-width: 100%;
 }
 
 /* Style links */
