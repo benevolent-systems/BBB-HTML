@@ -25,17 +25,6 @@ header {
     text-align: center;
 }
 
-/* Style the main content */
-.main-content {
-    max-width: 1920px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-}
-
-.main-content img {
-    max-width: 100%;
-}
 
 /* Style links */
 a {
@@ -92,6 +81,7 @@ p + p {
 
 .horizontal-nav {
     font-family: 'Adler';
+    font-size: larger;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,7 +92,7 @@ p + p {
 }
 
 .logo img {
-    max-height: 40px; /* Set the maximum height for your logo */
+    max-height: 50px; /* Set the maximum height for your logo */
 }
 
 .horizontal-nav ul {
@@ -164,4 +154,27 @@ p + p {
     color: #fff;
     transform: rotate(-4deg);
     margin-bottom: 20px;
+}
+
+/* Style the main content */
+.main-content {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.main-content img {
+    margin: 4% 0;
+    max-width: 100%;
+}
+
+/* Style the footer content */
+.footer-content {
+    display: flex;
+    justify-content: right;
+    max-width: 1920px;
+    margin: 3%;
 }
