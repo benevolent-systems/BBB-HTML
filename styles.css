@@ -14,7 +14,7 @@ body, h1, h2, h3, p {
 /* Set a background color for the body */
 body {
     background-color: #000000;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
 }
 
 /* Style the header */
@@ -101,7 +101,7 @@ p + p {
 }
 
 .horizontal-nav li {
-    margin-right: 20px;
+    margin-left: 30px;
 }
 
 .horizontal-nav a {
@@ -115,18 +115,23 @@ p + p {
 .landing-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     width: 70vw;
     max-width: 1280px;
     margin: 0 auto;
-    padding-top: 2%;
+    padding-top: 30px;
 }
 
 .left-content {
+    flex: 0 1 auto;
     flex-direction: column;
-    padding: 20px;
-    align-items: flex-start;
+    height: auto;
+    width: 50%;
+    padding-top: 30px;
+    justify-content: flex-start;
 }
+
+
 
 .splash-contacts {
     width: 25vw;
@@ -141,16 +146,21 @@ p + p {
     padding-top: 5px;
     border-top: #E5771E dotted 5px;
 }
+.right-content {
+    flex: 0 1 auto;
+    width: 50%;
+    justify-content: flex-end;
+
+}
 
 .right-content img {
-   flex: 0 0 auto;
     height: auto;
-    width: 30vw;
+    max-width: 100%;
 }
 
 .splash-title {
     font-family: 'Adler';
-    font-size: 4rem;
+    font-size: 4vw;
     color: #fff;
     transform: rotate(-4deg);
     margin-bottom: 20px;
@@ -174,7 +184,44 @@ p + p {
 /* Style the footer content */
 .footer-content {
     display: flex;
-    justify-content: right;
-    max-width: 1920px;
-    margin: 3%;
+    justify-content: space-between;
+    max-width: 1280px;
+    width: 70vw;
+    margin: 3% auto;
+    color: #fff;
+}
+
+.opening-times {
+    display: flex;
+    margin: auto;
+}
+
+#opening-times {
+
+    font-family: 'Adler';
+    font-size: 2.5vw;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+
+/* Style the opening times table */
+
+table {
+    width: 80%;
+    margin-bottom: 20px;
+    margin: auto;
+    font: 400 20px/1.5 "Montserrat", sans-serif;
+}
+
+td {
+    padding: 5px;
+    border: none;
+    text-align: left;
+}
+
+td.text-right {
+    color: #E5771E;
+    text-align: right;
 }
