@@ -131,7 +131,9 @@ p + p {
     justify-content: flex-start;
 }
 
-
+#foodhublogo {
+    width: 300px;
+}
 
 .splash-contacts {
     width: 25vw;
