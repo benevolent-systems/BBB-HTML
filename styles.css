@@ -133,12 +133,14 @@ p + p {
 }
 
 .left-content {
+  display: flex;
   flex: 0 1 auto;
   flex-direction: column;
   height: auto;
   width: 50%;
   padding-top: 30px;
   justify-content: flex-start;
+  align-items: center;
 }
 
 #foodhublogo {
@@ -187,7 +189,7 @@ p + p {
 
 .splash-title {
   font-family: "Adler";
-  font-size: 3vw;
+  font-size: 4vw;
   color: #fff;
   transform: rotate(-4deg);
   margin-bottom: 20px;
