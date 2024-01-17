@@ -1,229 +1,265 @@
 /* Reset some default browser styles */
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-    font: bold 16px/1.5 "Montserrat", sans-serif;
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  font: bold 16px/1.5 "Montserrat", sans-serif;
 }
 
 @font-face {
-    font-family: 'Adler';
-    src: url('fonts/Adler.woff2') format('woff2'),
-    /* Add additional font file formats if necessary */
-  }
+  font-family: "Adler";
+  src: url("fonts/Adler.woff2") format("woff2");
+  /* Add additional font file formats if necessary */
+}
 
 /* Set a background color for the body */
 body {
-    background-color: #000000;
-    /* font-family: Arial, sans-serif; */
+  background-color: #000000;
+  /* font-family: Arial, sans-serif; */
 }
 
 /* Style the header */
 header {
-    /* background-color: #333; */
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+  /* background-color: #333; */
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }
-
 
 /* Style links */
 a {
-    color: #007bff;
-    text-decoration: none;
+  color: #007bff;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Style headings */
-h1, h2, h3 {
-    color: #333;
+h1,
+h2,
+h3 {
+  color: #333;
 }
 
 /* Style paragraphs */
 p {
-    line-height: 1.6;
-    color: #666;
+  line-height: 1.6;
+  color: #666;
 }
 
 /* Add some margin to the bottom of paragraphs */
 p + p {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 /* Style a simple button */
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #E5771E;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: large;
-    margin-bottom: 30px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e5771e;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: large;
+  margin-bottom: 30px;
+}
+
+.button img {
+  transform: scaleX(-1);
+  margin-right: 8px;
 }
 
 .button:hover {
-    background-color: #ffffff;
-    color: #E5771E;
-    text-decoration: none;
+  background-color: #ffffff;
+  color: #e5771e;
+  text-decoration: none;
 }
 
 /* Additional styles for the landing area */
 .landing-header {
-    /* background-color: #333; */
-    color: #fff;
-    padding: 20px;
+  /* background-color: #333; */
+  color: #fff;
+  padding: 20px;
 }
 
 .horizontal-nav {
-    font-family: 'Adler';
-    font-size: larger;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70vw;
-    margin: 0 auto;
-    background-color: #000000;
-    max-width: 1060px;
+  font-family: "Adler";
+  font-size: larger;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70vw;
+  margin: 0 auto;
+  background-color: #000000;
+  max-width: 1060px;
 }
 
 .logo img {
-    max-height: 50px; /* Set the maximum height for your logo */
+  max-height: 50px; /* Set the maximum height for your logo */
 }
 
 .horizontal-nav ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .horizontal-nav li {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .horizontal-nav a {
-    color: #fff;
+  color: #fff;
 }
 
 .horizontal-nav a:hover {
-    color: #E5771E;
+  color: #e5771e;
 }
 
 .landing-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    width: 70vw;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 70vw;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 30px;
 }
 
 .left-content {
-    flex: 0 1 auto;
-    flex-direction: column;
-    height: auto;
-    width: 50%;
-    padding-top: 30px;
-    justify-content: flex-start;
+  flex: 0 1 auto;
+  flex-direction: column;
+  height: auto;
+  width: 50%;
+  padding-top: 30px;
+  justify-content: flex-start;
 }
 
 #foodhublogo {
-    width: 300px;
+  width: 300px;
+  margin: 10px;
 }
 
 .splash-contacts {
-    width: 25vw;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 30vw;
+  /* margin: 4vw; */
+  justify-content: center;
+  max-width: 90%;
 }
 
+.foodhub {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+/* .phone-number .social {
+  display: ;
+} */
 .splash-contacts p {
-    color: #fff;
+  color: #fff;
+  font: bold 20px/1.5 "Montserrat", sans-serif;
 }
 
-.splash-contacts .address p{
-    padding-top: 5px;
-    border-top: #E5771E dotted 5px;
+.splash-contacts .address p {
+  padding-top: 15px;
+  border-top: #e5771e dotted 5px;
 }
 .right-content {
-    flex: 0 1 auto;
-    width: 50%;
-    justify-content: flex-end;
-
+  flex: 0 1 auto;
+  width: 50%;
+  justify-content: flex-end;
 }
 
 .right-content img {
-    height: auto;
-    max-width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 .splash-title {
-    font-family: 'Adler';
-    font-size: 4vw;
-    color: #fff;
-    transform: rotate(-4deg);
-    margin-bottom: 20px;
+  font-family: "Adler";
+  font-size: 3vw;
+  color: #fff;
+  transform: rotate(-4deg);
+  margin-bottom: 20px;
 }
 
 /* Style the main content */
 .main-content {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
 }
 
 .main-content img {
-    margin: 4% 0;
-    max-width: 100%;
+  margin: 4% 0;
+  max-width: 100%;
 }
 
 /* Style the footer content */
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1280px;
-    width: 70vw;
-    margin: 3% auto;
-    color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1280px;
+  width: 90vw;
+  margin: 3% auto;
+  color: #fff;
 }
 
 .opening-times {
-    display: flex;
-    margin: auto;
+  display: flex;
+  margin: 0 auto;
 }
 
 #opening-times {
-
-    font-family: 'Adler';
-    font-size: 2.5vw;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 5%;
+  font-family: "Adler";
+  font-size: 2.5vw;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 5%;
 }
-
 
 /* Style the opening times table */
 
 table {
-    width: 80%;
-    margin-bottom: 20px;
-    margin: auto;
-    font: 400 20px/1.5 "Montserrat", sans-serif;
+  width: 100%;
+  margin-bottom: 20px;
+  margin: auto;
+  font: 400 20px/1.5 "Montserrat", sans-serif;
 }
 
 td {
-    padding: 5px;
-    border: none;
-    text-align: left;
+  padding: 5px;
+  border: none;
+  text-align: left;
 }
 
 td.text-right {
-    color: #E5771E;
-    text-align: right;
+  color: #e5771e;
+  text-align: right;
 }
+
+.logo-btm {
+display: flex;
+justify-content: space-around;
+margin-top: 30px;
+}
+
+.logo-btm img{
+  /* align-self: center; */
+  max-width: 40%;
+}
+

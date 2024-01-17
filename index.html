@@ -1,112 +1,153 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Big Bro's Burgers Leeds</title>
-    
+
     <!-- Open Graph meta tags for social media sharing -->
-    <meta property="og:title" content="Big Bro's Burgers">
-    <meta property="og:description" content="Description of your webpage content">
-    <meta property="og:image" content="URL to an image associated with your webpage">
-    <meta property="og:url" content="URL of your webpage">
-    <meta name="og:locale" content="en_GB">
-    
-    <link rel="stylesheet" href="styles.css"> <!-- Replace "styles.css" with the actual filename of your CSS stylesheet -->
-</head>
-<body>
-   <!-- Landing area -->
-   <header class="landing-header">
-    <nav class="horizontal-nav">
+    <meta property="og:title" content="Big Bro's Burgers" />
+    <meta
+      property="og:description"
+      content="Description of your webpage content"
+    />
+    <meta
+      property="og:image"
+      content="URL to an image associated with your webpage"
+    />
+    <meta property="og:url" content="URL of your webpage" />
+    <meta name="og:locale" content="en_GB" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Replace "styles.css" with the actual filename of your CSS stylesheet -->
+  </head>
+  <body>
+    <!-- Landing area -->
+    <header class="landing-header">
+      <nav class="horizontal-nav">
         <div class="logo">
-            <img src="/img/BBB_Logo_Wide.svg" alt="Big Bros Burger Logo">
+          <img src="/img/BBB_Logo_Wide.svg" alt="Big Bros Burger Logo" />
         </div>
         <ul>
-            <li><a href="#">order now</a></li>
-            <li><a href="#">location</a></li>
-            <li><a href="#">menu</a></li>
-            <!-- <li><a href="#">careers</a></li> -->
-            <li><a href="#">about</a></li>
+          <li><a href="http://bigbrosleeds.co.uk">order now</a></li>
+          <li><a href="#map">location</a></li>
+          <li><a href="#menu">menu</a></li>
+          <!-- <li><a href="#">careers</a></li> -->
+          <li><a href="#contact">about</a></li>
         </ul>
-    </nav>
-    
-    <div class="landing-content">
+      </nav>
+
+      <div class="landing-content">
         <div class="left-content">
-            <h1 class="splash-title">Burgers that hit different</h1>
-            <a href="#" class="button">ORDER NOW</a>
-            <div class="splash-contacts">
-                <div class="phone-number">
-                <p>01133 452440</p>
-                </div>
-                <div class="social">
-                <p>@bigbrosleeds</p>
-                </div>
-                <div>
-                <img id="foodhublogo" src="img/foodhub_logo.svg" alt="Order from Foodhub">
-                </div>
-                <div class="address">
-                <p>11A Hopewell View, Middleton,  LEEDS, LS10 3TE</p>
-                </div>
-            </div>
-        </div>
+          <h1 class="splash-title">Burgers that hit different</h1>
+          <!-- <a href="tel:123-456-7890" id="call-button" class="button"><img src="img/phone-solid.svg">Order NOW</a> -->
+          <div class="splash-contacts">
         
-        <div class="right-content">
-            <img src="img/Hench-Burger-wReflection@2x.jpg" alt="Big Tasty Burger">
+            <div class="foodhub">
+              Order online at
+              <a href="http://bigbrosleeds.co.uk"><img
+                id="foodhublogo"
+                src="img/foodhub_logo.svg"
+                alt="Order from Foodhub"
+              />
+            </a>
+            </div>
+            <div class="phone-number">
+              <p>01133 452440</p>
+            </div>
+            <div class="social">
+              <p>@bigbrosleeds</p>
+            </div>
+            <div class="address">
+              <p>11A Hopewell View, Middleton, LEEDS, LS10 3TE</p>
+            </div>
+          </div>
         </div>
+
+        <div class="right-content">
+          <img
+            src="img/Hench-Burger-wReflection@2x.jpg"
+            alt="Big Tasty Burger"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content area -->
+    <div id="menu" class="main-content">
+      <!-- Your main webpage content goes here -->
+      <img src="img/Desktop-Menu-Tight.svg" alt="Menu" />
     </div>
-</header>
 
-<!-- Main content area -->
-<div class="main-content">
-    <!-- Your main webpage content goes here -->
-    <img src="img/Desktop-Menu-Tight.svg" alt="Menu">
-
-</div>
-
-<!-- footer area and map -->
-<div class="footer-content">
-    <div class="opening-times">
+    <!-- footer area and map -->
+    <div id="contact" class="footer-content">
+      <div class="opening-times">
         <div class="opening-times-title">
-            <h1 id="opening-times">Opening Times</h1>
-            <table>
-                <!-- <tr>
+          <h1 id="opening-times">Opening Times</h1>
+          <table>
+            <!-- <tr>
                     <th>Day</th>
                     <th>Opening Time</th>
                 </tr> -->
-                <tr>
-                    <td>MONDAY</td>
-                    <td class="text-right">CLOSED</td>
-                </tr>
-                <tr>
-                    <td>TUESDAY</td>
-                    <td class="text-right">CLOSED</td>
-                </tr>
-                <tr>
-                    <td>WEDNESDAY</td>
-                    <td class="text-right">4PM-10PM</td>
-                </tr>
-                <tr>
-                    <td>THURSDAY</td>
-                    <td class="text-right">4PM-10PM</td>
-                </tr>
-                <tr>
-                    <td>FRIDAY</td>
-                    <td class="text-right">4PM-10PM</td>
-                </tr>
-                <tr>
-                    <td>SATURDAY</td>
-                    <td class="text-right">4PM-10PM</td>
-                </tr>
-                <tr>
-                    <td>SUNDAY</td>
-                    <td class="text-right">4PM-10PM</td>
-                </tr>
-                <!-- Add more rows for other days as needed -->
-            </table>
+            <tr>
+              <td>MONDAY</td>
+              <td class="text-right">CLOSED</td>
+            </tr>
+            <tr>
+              <td>TUESDAY</td>
+              <td class="text-right">CLOSED</td>
+            </tr>
+            <tr>
+              <td>WEDNESDAY</td>
+              <td class="text-right">4PM-10PM</td>
+            </tr>
+            <tr>
+              <td>THURSDAY</td>
+              <td class="text-right">4PM-10PM</td>
+            </tr>
+            <tr>
+              <td>FRIDAY</td>
+              <td class="text-right">4PM-10PM</td>
+            </tr>
+            <tr>
+              <td>SATURDAY</td>
+              <td class="text-right">4PM-10PM</td>
+            </tr>
+            <tr>
+              <td>SUNDAY</td>
+              <td class="text-right">4PM-10PM</td>
+            </tr>
+            <!-- Add more rows for other days as needed -->
+          </table>
         </div>
+      </div>
+      <div id="map" class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d453.2283862461563!2d-1.5391558530291123!3d53.749959946545495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48795ddd741d3339%3A0x9c9aeb331a573136!2s11%20Hopewell%20View%2C%20Middleton%2C%20Leeds%20LS10%203TE!5e0!3m2!1sen!2suk!4v1705271660853!5m2!1sen!2suk"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="logo-btm">
+        <img src="img/BBB_Logo_Stacked.svg" alt="Stacked Logo Bottom" /> 
     </div>
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d453.2283862461563!2d-1.5391558530291123!3d53.749959946545495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48795ddd741d3339%3A0x9c9aeb331a573136!2s11%20Hopewell%20View%2C%20Middleton%2C%20Leeds%20LS10%203TE!5e0!3m2!1sen!2suk!4v1705271660853!5m2!1sen!2suk" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
-</div>
-</body>
+    <div class="splash-contacts">
+            <div class="phone-number">
+              <p>01133 452440</p>
+            </div>
+            <div class="social">
+              <p>@bigbrosleeds</p>
+            </div>
+            <div>
+              <img
+                id="foodhublogo"
+                src="img/foodhub_logo.svg"
+                alt="Order from Foodhub"
+              />
+            </div>
+  </body>
 </html>
