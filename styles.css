@@ -9,6 +9,28 @@ p {
   font: bold 16px/1.5 "Montserrat", sans-serif;
 }
 
+/* - TESTING FLOATING BUTTON - */
+
+/* .float{
+	position:fixed;
+	width:160px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #cacaca;
+}
+
+.my-float{
+	margin-top:22px;
+} */
+
+/* - TESTING FLOATING BUTTON - */
+
+
 @font-face {
   font-family: "Adler";
   src: url("fonts/Adler.woff2") format("woff2");
@@ -140,6 +162,7 @@ p + p {
 }
 
 #phone-icon {
+    height: 22px;
     transform: scaleX(-1);
     margin-right: 5px;
     margin-bottom: -2px;
@@ -148,7 +171,7 @@ p + p {
 }
 
 #instagram-icon {
-  height: 16px;
+  height: 22px;
   margin-right: 5px;
   margin-bottom: -2px;
 }
@@ -172,6 +195,7 @@ p + p {
 .foodhub {
   display: flex;
   flex-direction: column;
+  font: normal 22px/1.4 "Montserrat", sans-serif;
   margin: 20px auto;
 }
 
@@ -190,12 +214,12 @@ p + p {
 
 .contact-links a {
   color: #fff;
-  font: normal 16px/1.4 "Montserrat", sans-serif;
+  font: normal 1.5vw/1.4 "Montserrat", sans-serif;
   letter-spacing: 1px;
 }
 
 .splash-contacts p {
-  font: normal 16px/1.4 "Montserrat", sans-serif;
+  /* font: normal 22px/1.4 "Montserrat", sans-serif; */
   letter-spacing: 1px;
   color: #fff;
 }
@@ -203,6 +227,8 @@ p + p {
 .splash-contacts .address p {
   padding-top: 15px;
   border-top: #e5771e dotted 5px;
+  font: normal 22px/1.4 "Montserrat", sans-serif;
+
 }
 
 .phone-number {
@@ -239,8 +265,8 @@ p + p {
   margin-bottom: 20px;
 }
 
-/* Style the main content */
-.main-content {
+/* Style the menu content */
+.menu-content {
   display: flex;
   justify-content: center;
   max-width: 100%;
@@ -249,7 +275,11 @@ p + p {
   background-color: #fff;
 }
 
-.main-content img {
+.menu-small {
+  display: none;
+}
+
+.menu-content img {
   margin: 4% 0;
   max-width: 100%;
 }
@@ -298,22 +328,29 @@ td.text-right {
   text-align: right;
 }
 
-.logo-btm {
-display: flex;
-justify-content: space-around;
-margin-top: 30px;
-}
-
-.logo-btm img{
-  /* align-self: center; */
-  max-width: 40%;
-}
-
 footer {
   display: flex;
 }
 
+.splash-contacts-footer .address p {
+  padding-top: 15px;
+  border-top: #e5771e dotted 5px;
+  font: normal 22px/1.4 "Montserrat", sans-serif;
 
+}
+
+.logo-btm {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  }
+  
+  .logo-btm img{
+    /* align-self: center; */
+    max-width: 40%;
+  }
+
+  
 /* --------------- MOBILE VERSION --------------- */
 
 
@@ -375,6 +412,19 @@ footer {
     margin-top: -80px;
 }
 
+.splash-contacts {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+.splash-contacts .address p {
+  padding-top: 15px;
+  border-top: #e5771e dotted 5px;
+    font: normal 16px/1.4 "Montserrat", sans-serif;
+
+}
+
 .splash-contacts p {
   font: normal 16px/1.4 "Montserrat", sans-serif;
   letter-spacing: 1px;
@@ -382,10 +432,35 @@ footer {
 
 .contact-links {
   gap: 0 25px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.contact-links a {
+  color: #fff;
+  font: normal 1.5vw/1 "Montserrat", sans-serif;
+  letter-spacing: 1px;
+}
+
+#phone-icon {
+  height: 22px;
+  transform: scaleX(-1);
+  margin-right: 2px;
+  margin-bottom: -5px;
+  fill: #e5771e;
+
+}
+
+#instagram-icon {
+height: 22px;
+margin-right: 2px;
+margin-bottom: -5px;
 }
 
 .foodhub {
   margin: 0 auto;
+  font: normal 16px/1.4 "Montserrat", sans-serif;
+
 }
 
 #foodhublogo {
@@ -393,9 +468,13 @@ footer {
   margin: 10px;
 }
 
-  .splash-contacts {
-    width: 100%;
-  }
+.menu-large {
+  display: none;
+}
+
+.menu-small {
+  display: block;
+}
 
 
 .opening-times {
@@ -423,6 +502,28 @@ footer {
     width: 100%;
     height: 40vh;
 
+  }
+
+  .splash-contacts-footer {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  
+  .splash-contacts-footer .address-footer p {
+    padding-top: 15px;
+    border-top: #e5771e dotted 5px;
+      font: normal 16px/1.4 "Montserrat", sans-serif;
+  
+  }
+
+  .foodhub-footer {
+    display: flex;
+    margin: 0 auto;
+    font: normal 16px/1.4 "Montserrat", sans-serif;
+    flex-direction: column;
+    align-items: center;
+  
   }
 
   .logo-btm {
