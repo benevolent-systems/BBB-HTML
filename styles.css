@@ -438,7 +438,7 @@ footer {
 
 .contact-links a {
   color: #fff;
-  font: normal 1.5vw/1 "Montserrat", sans-serif;
+  font: normal 2vh/1 "Montserrat", sans-serif;
   letter-spacing: 1px;
 }
 
@@ -504,17 +504,23 @@ margin-bottom: -5px;
 
   }
 
+.footer-content {
+  justify-content: center;
+}
+
   .splash-contacts-footer {
     width: 100%;
-    max-width: 100%;
+    max-width: 100%;  
+    margin: 0 auto 100px;
   }
   
   
   .splash-contacts-footer .address-footer p {
     padding-top: 15px;
     border-top: #e5771e dotted 5px;
-      font: normal 16px/1.4 "Montserrat", sans-serif;
-  
+    font: normal 16px/1.4 "Montserrat", sans-serif;
+    text-align: center;
+    color: #fff;
   }
 
   .foodhub-footer {
@@ -527,7 +533,7 @@ margin-bottom: -5px;
   }
 
   .logo-btm {
-    margin: 20px auto 60px;
+    margin: 20px auto 20px;
   }
 
   .logo-btm img {
