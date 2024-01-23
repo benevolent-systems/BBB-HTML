@@ -104,7 +104,7 @@ p + p {
 .landing-header {
   /* background-color: #333; */
   color: #fff;
-  padding: 20px;
+  padding: 20px 0 0;
 }
 
 .horizontal-nav {
@@ -156,7 +156,7 @@ p + p {
   flex-direction: column;
   height: auto;
   width: 50%;
-  padding-top: 30px;
+  padding-top: 5vh;
   justify-content: flex-start;
   align-items: center;
 }
@@ -195,7 +195,7 @@ p + p {
 .foodhub {
   display: flex;
   flex-direction: column;
-  font: normal 22px/1.4 "Montserrat", sans-serif;
+  font: normal 2.6vh/1.2 "Montserrat", sans-serif;
   margin: 20px auto;
 }
 
@@ -226,9 +226,14 @@ p + p {
 
 .splash-contacts .address p {
   padding-top: 15px;
+  margin-top: 10px;
   border-top: #e5771e dotted 5px;
-  font: normal 22px/1.4 "Montserrat", sans-serif;
+  font: normal 2.6vh/1.2 "Montserrat", sans-serif;
 
+}
+
+.splash-contacts .address a {
+  color: #fff;
 }
 
 .phone-number {
@@ -270,7 +275,7 @@ p + p {
   display: flex;
   justify-content: center;
   max-width: 100%;
-  margin: 20px auto;
+  margin: 0 auto 20px;
   padding: 20px;
   background-color: #fff;
 }
@@ -285,14 +290,27 @@ p + p {
 }
 
 /* Style the footer content */
-.footer-content {
+/* .footer-conten OLD {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   max-width: 1280px;
   width: 90vw;
   margin: 3% auto;
   color: #fff;
+} */
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  width: 90vw;
+  margin: 5% auto;
+  color: #fff;
+  row-gap: 30px;
+  column-gap: 50px;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .opening-times {
@@ -328,30 +346,85 @@ td.text-right {
   text-align: right;
 }
 
+
 footer {
   display: flex;
 }
 
-.splash-contacts-footer .address p {
-  padding-top: 15px;
-  border-top: #e5771e dotted 5px;
-  font: normal 22px/1.4 "Montserrat", sans-serif;
+.foodhub-footer {
+  display: flex;
+  margin: 0 auto;
+  font: normal 2.4vh/1.2 "Montserrat", sans-serif;
+  flex-direction: column;
+  align-items: center;
 
+}
+
+.splash-contacts-footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 30vw;
+  /* margin: 4vw; */
+  justify-content: center;
+  max-width: 90%;
+
+}
+
+.splash-contacts-footer .address-footer p {
+  padding-top: 15px;
+  margin-top: 15px;
+  border-top: #e5771e dotted 5px;
+  font: normal 2.6vh/1.2 "Montserrat", sans-serif;
+  color: #fff;
+  text-align:center;
 }
 
 .logo-btm {
   display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
+  /* justify-content: space-around;
+  margin-top: 30px; */
   }
   
   .logo-btm img{
     /* align-self: center; */
-    max-width: 40%;
+    max-width: 30vw;
   }
 
-  
+  /* .contact-links-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 30px;
+    align-content: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+   */
+  .contact-links-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 30px;
+    align-content: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+  .contact-links-footer a {
+    color: #fff;
+    font: normal 2.6vh/1.4 "Montserrat", sans-serif;
+    letter-spacing: 1px;
+  }
+
+
+
+
+
+
 /* --------------- MOBILE VERSION --------------- */
+
+
 
 
 
@@ -360,6 +433,12 @@ footer {
 @media only screen and (max-width:480px) {
   body {
     background-color: rgb(0, 0, 0);
+  }
+
+  .landing-header {
+    /* background-color: #333; */
+    color: #fff;
+    padding: 20px;
   }
 
   .landing-content {
@@ -430,13 +509,13 @@ footer {
   letter-spacing: 1px;
 }
 
-.contact-links {
-  gap: 0 25px;
-  padding-top: 3%;
-  padding-bottom: 3%;
+.contact-links-footer {
+  gap: 25px 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
-.contact-links a {
+.contact-links a, .contact-links-footer a {
   color: #fff;
   font: normal 2vh/1 "Montserrat", sans-serif;
   letter-spacing: 1px;
@@ -459,13 +538,21 @@ margin-bottom: -5px;
 
 .foodhub {
   margin: 0 auto;
-  font: normal 16px/1.4 "Montserrat", sans-serif;
+  font: normal 2.4vh/1.2 "Montserrat", sans-serif;
 
 }
 
 #foodhublogo {
   width: 50vw;
   margin: 10px;
+}
+
+.menu-content {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin: 20px auto;
+  background-color: #fff;
 }
 
 .menu-large {
@@ -492,7 +579,7 @@ margin-bottom: -5px;
 }
 
   .map {
-    padding-top: 10vw;
+    padding-top: 5vw;
     justify-content: center;
     margin: 0 auto;
   }
@@ -504,21 +591,27 @@ margin-bottom: -5px;
 
   }
 
-.footer-content {
-  justify-content: center;
-}
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
 
   .splash-contacts-footer {
+    display: flex;
+    align-content: center;
     width: 100%;
     max-width: 100%;  
     margin: 0 auto 100px;
   }
   
-  
+
   .splash-contacts-footer .address-footer p {
-    padding-top: 15px;
+    padding-top: 20px;
+    margin-top: 5px;
     border-top: #e5771e dotted 5px;
-    font: normal 16px/1.4 "Montserrat", sans-serif;
+    font: normal 2.4vh/1.2 "Montserrat", sans-serif;
     text-align: center;
     color: #fff;
   }
@@ -534,6 +627,7 @@ margin-bottom: -5px;
 
   .logo-btm {
     margin: 20px auto 20px;
+    justify-content: center;
   }
 
   .logo-btm img {
